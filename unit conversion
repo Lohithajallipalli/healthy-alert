@@ -1,0 +1,225 @@
+#include <stdio.h>
+int main() {
+ char input,ch,yes;
+
+ float FahrenheittoCelsius ;
+ float celsiustoFahrenheit;
+ float kilometertomilemeter=1000000;
+ float milemetretokilometre=0.0000010;
+ float Foottometre=0.30;
+ float metretofoot=3.28084;
+ float inchtocentimetre=2.54;
+ float centimetretoinch=0.3937007874;
+ float miletokilometre=1.61;
+ float kilometretomile=0.62;
+ float poundtokilogram=0.45;
+ float kilogramtopound=2.20;
+ float ouncetogram=28.349523125;
+ float gramtoounce=0.04;
+ float acretometresquare=4046.86;
+ float metresquaretoacre=0.00024711;
+ float pinttolitre=0.473176473;
+ float litertopint=2.1133764189;
+ float first;
+ float solution;
+
+
+do{
+ printf("\n\t\t****UNIT CONVERSIONS****");  
+ printf(" \n\n1.Fahrenheit to Celsius\n2.celsius to Fahrenheit\n3.kilo meter tomilemeter\n4.milemetre to kilo metre\n5.Foot to metre\n6.metre to foot \n7.inch tocentimetre\n8.centimetre to inch\n9.mile to kilometre\n10.kilometre to mile\n11.pound tokilogram\n12.kilogram to pound\n13.ounce to gram\n14.gram to ounce\n15.acre to metresquare\n16.metre square to acre\n17.pint to litre\n18.litre to pint");
+ 
+ printf("\n\n Enter your choice\n\n");
+ 
+
+ scanf("%hhd",&input);
+ if(input < 0 || input > 19)
+ printf(" enter the value between 1-18\n\n");
+ 
+ else{
+    
+     
+ switch (input)
+
+ {
+ // Fahrenheit to Celsius
+ case 1:
+ printf("Fahrenheit to Celsius\n\n");
+ printf("Enter the value in Fahrenheit ");
+ scanf("%f",&first);
+ solution = (5.0/9)*(first-(32));
+ printf("%f Fahrenheit is equal to %f Celsius \n",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+  
+ break;
+ //celsius to Fahrenheit
+ case 2:
+ printf("celsius to Fahrenheit\n");
+ printf("Enter the value in celsius ");
+ scanf("%f",&first);
+ solution = (first * 9/5) + 32;
+ printf("%f Celsius is equal to %f Fahrenheit \n",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //kilometer to milemeter
+ case 3:
+ printf("kilometer to milemeter\n");
+ printf("Enter the value in kilometer ");
+ scanf("%f",&first);
+ solution = first * kilometertomilemeter ;
+ printf("%f kilometer is equal to %f milemeter \n",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //milemetre to kilometre
+ case 4:
+ printf("milemetre to kilometre\n");
+ printf(" Enter the value in milemetre ");
+ scanf("%f",&first);
+ solution = first * milemetretokilometre ;
+ printf("%f milemeter is equal to %f kiloemeter \n",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //Foot to metre
+ case 5:
+ printf("Foot to metre\n");
+ printf(" Enter the value in Foot");
+ scanf("%f",&first);
+ solution = first * Foottometre ;
+ printf("%f Foot is equal to %f meter \n",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //metre to foot
+ case 6:
+ printf("metre to foot");
+ printf("\nEnter the value in metre");
+ scanf("%f",&first);
+ solution = first * metretofoot ;
+ printf("%f meter is equal to %f foot\n ",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //inch to centimetre
+ case 7:
+ printf("inch to centimetre\n");
+ printf(" Enter the value in inch");
+ scanf("%f",&first);
+ solution = first * inchtocentimetre ;
+ printf("%f inch is equal to %f centimetre \n",first,solution);
+ printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //centimetre to inch
+ case 8:
+ printf("centimetre to inch\n");
+ printf(" Enter the value in centimetre");
+ scanf("%f",&first);
+ solution = first * centimetretoinch ;
+ printf("%f centimetre is equal to %f inch\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //mile to kilometre
+ case 9:
+ printf("mile to kilometre\n");
+ printf(" Enter the value in mile");
+ scanf("%f",&first);
+ solution = first * miletokilometre ;
+ printf("%f mile is equal to %f kilometre\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ //kilometre to mile
+ case 10:
+ printf("kilometre to mile\n");
+ printf("Enter the value in kilometre");
+ scanf("%f",&first);
+ solution = first * kilometretomile ;
+ printf("%f kilometre is equal to %f mile\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 11:
+ printf("poundtokilogram\n");
+ printf("Enter the value in pound");
+ scanf("%f",&first);
+ solution = first * poundtokilogram ;
+ printf("%f pound is equal to %f kilogram\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 12:
+ printf("kilogram to pound\n");
+ printf("Enter the value in kilogram");
+ scanf("%f",&first);
+ solution = first * kilogramtopound ;
+ printf("%f kilogram is equal to %f pound\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 13:
+ printf("ounce to gram\n");
+ printf("Enter the value in ounce");
+ scanf("%f",&first);
+ solution = first * ouncetogram ;
+ printf("%f ounce is equal to %f gram \n",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 14:
+ printf("gram to ounce\n");
+ printf("Enter the value in gram");
+ scanf("%f",&first);
+ solution = first * gramtoounce ;
+ printf("%f gram is equal to %f ounce\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 15:
+ printf("acre to metresquare\n");
+ printf("Enter the value in acre");
+ scanf("%f",&first);
+ solution = first * acretometresquare ;
+ printf("%f acre is equal to %f metresquare\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 16:
+ printf("metresquare to acre\n");
+ printf("Enter the value in metresquare");
+ scanf("%f",&first);
+ solution = first * metresquaretoacre ;
+ printf("%f metresquare is equal to %f acre \n",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 17:
+ printf("pint to litre\n");
+ printf("Enter the value in pint");
+ scanf("%f",&first);
+ solution = first * pinttolitre ;
+ printf("%f pint is equal to %f litre\n ",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+ case 18:
+ printf("liter to pint\n");
+ printf("Enter the value in liter");
+ scanf("%f",&first);
+ solution = first * litertopint ;
+ printf("%f liter is equal to %f pint \n",first,solution);
+  printf ("Do you want to continue: y/n");
+ scanf (" %c", &ch);
+ break;
+
+ default: printf("Enter the correct choice");
+
+ break;
+ }
+ }
+ } while(ch == 'y');
+  return 0;
+}
